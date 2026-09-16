@@ -59,21 +59,33 @@ ssh -ubuntu@111.14.140.103
 ## 3.主机浏览器输入端口：
 打开浏览器，输入根据需要输入网址：
 ```
-http://127.0.0.1:3000/  //图像生成器网页端
+http://127.0.0.1:3000/  //图像+视频生成器网页端
 http://127.0.0.1:8188/ //comfyui工作流网页端
 ```
 <table>
   <tr>
     <td align="center">
-      <img src="./assets/网页.png" width="500">
+      <img src="./assets/ai工作站主页.png" width="800">
     </td>
+    <table>
     <td align="center">
-      <img src="./assets/工作流.png" width="700">
+      <img src="./assets/工作流.png" width="800">
     </td>
   </tr>
 </table>
 
 ---
 
-# 原理
-
+# 2026.9.16更新
+  网页端继承了视频生成模型入口，wan2.2
+<table>
+  <tr>
+    <td align="center">
+      <img src="./assets/视频生成界面.png" width="800">
+    </td>
+    <table>
+    <td align="center">
+      <img src="./assets/网页.png" width="800">
+    </td>
+  </tr>
+</table>
