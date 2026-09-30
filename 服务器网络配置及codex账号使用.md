@@ -37,13 +37,13 @@
   Host thu-lab-maxon //服务器别名
     HostName [aaa.bbb.cc.dd]  //服务器地址
     User maxon  //用户名
-    RemoteForward [10809] [127.0.0.1:10809] //服务器监听端口10809，反向隧道连接到电脑主机的10809端口，该端口为代理https端口
+    RemoteForward [10809] [127.0.0.1:10809] //服务器监听端口10809（选一个未占用的端口），反向隧道连接到电脑主机的10809端口，该端口为代理https端口
     ExitOnForwardFailure yes //创建不成功，就别继续连接
   ```
 ### 2.服务器代理配置
   在服务器~/.bashrc添加以下内容：
   ```
-  // 服务器中http和https协议访问都通过10809代理访问
+  // 服务器中http和https协议访问都通过10809代理访问，10809就是vpn的https端口
   export http_proxy=http://127.0.0.1:10809  
   export https_proxy=http://127.0.0.1:10809
   ```
